@@ -1,0 +1,11 @@
+html,
+body,
+#root {
+  height: 100vh;
+}
+
+body {  
+  overflow: hidden;
+  background: rgb(32,33,36);
+  color: rgb(174,193,198);
+}
