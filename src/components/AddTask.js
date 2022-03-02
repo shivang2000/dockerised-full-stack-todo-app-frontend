@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { useCreateTaskMutation } from "../redux/taskApi";
+import { useCreateTaskMutation, useGetTasksQuery } from "../redux/taskApi";
 
 const AddTask = () => {
     const [task, setTask] = useState('')
@@ -15,6 +15,12 @@ const AddTask = () => {
             setTask('')
         }
     }
+
+    // useEffect(() => {
+    //     if (isSuccess){
+            
+    //     }
+    // }, [isSuccess])
 
     const inputValue = isLoading ? (task + ' Adding your Task') : ''
     // inputValue = isLoading && isSuccess ? '' : task

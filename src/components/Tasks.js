@@ -21,8 +21,8 @@ const Tasks = () => {
         }
     }, [false])
 
-    const skip = user ? true : false
-    const {data: tasks = [], isLoading, isSuccess} = useGetTasksQuery({skip})
+    const skip = user ? false : true
+    const {data: tasks = [], isLoading, isSuccess} = useGetTasksQuery({skip: skip})
     
 
     let content
