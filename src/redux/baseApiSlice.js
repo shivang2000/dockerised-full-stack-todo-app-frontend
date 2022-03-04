@@ -6,7 +6,7 @@ export const baseApi = createApi({
     baseQuery: fetchBaseQuery({
         // baseUrl: 'https://full-stack-todo-app-backend.herokuapp.com',
         // baseUrl: process.env.REACT_APP_BACKENDAPIURL,
-        baseUrl: 'http://localhost:8000',
+        baseUrl: 'http://localhost',
         prepareHeaders: (headers, { getState }) => {
             const token = getState().auth.token
 
